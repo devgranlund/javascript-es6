@@ -16,3 +16,6 @@ Notes about ES6 features, based on Wes Bos ES6 course.
 #### switch variables
 [first, second] = [second, first]
 
+## Array functions
+
+See [ext1.html](https://github.com/devgranlund/javascript-es6/blob/master/ext1.html) and [ext2.html](https://github.com/devgranlund/javascript-es6/blob/master/ext1.html) for reference.
