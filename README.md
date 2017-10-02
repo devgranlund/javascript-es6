@@ -4,18 +4,15 @@ Notes about ES6 features, based on Wes Bos ES6 course.
 
 ## Variables
 
-### var
+#### var
 * function scoped, can leak out
 * can be redefined (not good!)
 * allows references even if not assinged yet
-
-### let 
+#### let 
 * block scoped
-
-### const
+#### const
 * block scoped
 * immutable
-
-### switch variables
+#### switch variables
 [first, second] = [second, first]
 
