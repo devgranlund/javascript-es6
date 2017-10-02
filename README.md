@@ -18,4 +18,4 @@ Notes about ES6 features, based on Wes Bos ES6 course.
 
 ## Array functions
 
-See [ext1.html](https://github.com/devgranlund/javascript-es6/blob/master/ext1.html) and [ext2.html](https://github.com/devgranlund/javascript-es6/blob/master/ext1.html) for reference.
+See [ext1.html](https://github.com/devgranlund/javascript-es6/blob/master/ext1.html) and [ext2.html](https://github.com/devgranlund/javascript-es6/blob/master/ext2.html) for reference.
