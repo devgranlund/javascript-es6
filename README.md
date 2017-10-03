@@ -24,5 +24,6 @@ See [ext1.html](https://github.com/devgranlund/javascript-es6/blob/master/ext1.h
 
 ## String templates
 
-See [template_strings] (https://github.com/devgranlund/javascript-es6/blob/master/template_strings.html)
+See [template_strings.html](https://github.com/devgranlund/javascript-es6/blob/master/template_strings.html).
+
 This is good technique also for sanitizing user input. 
