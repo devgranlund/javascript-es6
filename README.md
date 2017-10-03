@@ -52,6 +52,9 @@ The same thing works for arrays too. Just replace {} with [].
 See [deconstructing_functions.html](https://github.com/devgranlund/javascript-es6/blob/master/deconstructing_functions.html).
 
 Deconstruction can also be used in function:
+
 function tipCalc({ total, tip = 0.15, tax = 0.13}) {...};
+
 and that can be called:
+
 const bill = tipCalc({100, tip: 0.05});
