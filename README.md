@@ -32,7 +32,17 @@ This is good technique also for sanitizing user input.
 
 ### New methods
 .startsWith()
+
 .endsWith()
+
 .includes()
+
 .repeat()
 
+## Deconstructing
+
+### Deconstructing objects
+
+See [deconstructing_objects.html](https://github.com/devgranlund/javascript-es6/blob/master/deconstructing_objects.html).
+
+The same thing works for arrays too. Just replace {} with [].
