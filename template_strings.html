@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Template Strings</title>
+</head>
+<body>
+<script>
+    // use variables inside strings
+    const name = 'Musti';
+    const age = 2;
+    const sentence = `My dog ${name} is ${age * 7} years old.`;
+    
+    // create html with variables inside and add to page
+    const markup = `
+        <div class="sentence">
+            <h3>${sentence}</h3>
+        </div>
+    `;
+    //document.body.innerHTML = markup;
+
+    //loop nested template strings
+    const dogs = [
+        {name: 'Musti', age: 2},
+        {name: 'Bella', age: 4},
+    ];
+    const dogMarkup = `
+        <ul class="dogs">
+        ${dogs.map(dog => `<li>${dog.name} is ${dog.age * 7} </li>`).join('')}
+        </ul>
+    `;
+
+    // if inside template
+    const song = {
+        name: 'Highway to hell',
+        artist: 'AC/DC'
+        // album --- this info is missing
+    }
+    const songMarkup = `
+        <div class="song">
+            <p>
+            ${song.name} - ${song.artist}
+            ${song.album ? `(Album ${album})` :
+            'No album info available.'}
+            </p>
+        </div>
+    `;
+
+    // render-method
+    const words = ['one', 'two', 'three'];
+    const wordsMarkup = `
+        <p>
+        ${renderMethod(words)}
+        </p>
+    `;
+    function renderMethod(words) {
+        return `
+            <ul>
+            ${words.map(word => `<li>${word}</li>`).join('')}
+            </ul>
+        `;
+    }
+
+   // Tagged Templates
+   function intercept(string, ...values){
+        let str = '';
+        string.forEach((string, i) => {
+            str += string + (values[i] || '');
+        });
+        return str; 
+   }
+   const interceptedSentence = intercept`
+   My name is ${name} and I'm ${age} old.`;
+   console.log(interceptedSentence);
+
+   document.body.innerHTML = 
+   markup + dogMarkup + songMarkup + wordsMarkup;
+</script>
+
+</body>
+</html>
