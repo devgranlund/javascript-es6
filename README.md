@@ -22,8 +22,17 @@ debugger; -> program stops and opens devtools.
 
 See [ext1.html](https://github.com/devgranlund/javascript-es6/blob/master/ext1.html) and [ext2.html](https://github.com/devgranlund/javascript-es6/blob/master/ext2.html) for reference.
 
-## String templates
+## Strings
+
+### String templates
 
 See [template_strings.html](https://github.com/devgranlund/javascript-es6/blob/master/template_strings.html).
 
 This is good technique also for sanitizing user input. 
+
+### New methods
+.startsWith()
+.endsWith()
+.includes()
+.repeat()
+
